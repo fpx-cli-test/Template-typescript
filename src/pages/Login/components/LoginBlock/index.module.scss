@@ -1,0 +1,148 @@
+@import '~@alifd/next/variables.scss';
+
+.loginContent{
+  position: absolute;
+  top: 50%;
+  right: 153px;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 364px;
+  box-sizing: border-box;
+  background-color: $color-white;
+  border-radius: 8px;
+}
+.LoginBlock {
+  width: 100%;
+  .loginWay{
+    .icon{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  .innerBlock {
+    width: 302px;
+    margin: 0 auto;
+    // 密码
+    .desc {
+      margin: 43px 0px 33px 0px;
+      color: $color-text1-2;
+      font-size: 16px;
+      cursor: pointer;
+      .active {
+        color: $color-text1-4;
+        font-weight: $font-weight-medium;
+        font-size: 20px;
+      }
+    }
+
+    .infoLine {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      height: 16px;
+
+      .infoLeft {
+        :global{
+          .next-checkbox-label{
+            color: $color-text1-3;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .link {
+        color: $color-link-1;
+        font-size: 14px;
+        text-align: left;
+      }
+    }
+
+    .submitBtn {
+      width: 100%;
+      margin: 25px 0px 33px;
+      font-size: 16px;
+    }
+
+    .bottom{
+      width: 230px;
+      margin: 0 0 30px 36px;
+      font-size: $font-size-body-1;
+      display: flex;
+      justify-content: space-between;
+      p:first-child{
+        color: $checkbox-label-color;
+      }
+      p:last-child{
+        color: $color-link-1;
+      }
+      p{
+        line-height: 20px;
+        display: flex;
+        span{
+          display: inline-block;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+  
+  .logo {
+    height: 30px;
+  }
+
+  .iframe {
+    margin-top: 20px;
+  }
+  
+  :global{
+    .next-btn.next-large{
+      height: 40px;
+    }
+  }
+  
+  // .line {
+  //   display: inline-block;
+  //   width: 1px;
+  //   height: 12px;
+  //   background: $color-text1-2;
+  // }
+  
+  // .innerBeforeInput {
+  //   margin-left: 10px;
+  //   color: $color-text1-2;
+  //   .line {
+  //     margin-left: 10px;
+  //   }
+  // }
+  
+  // .innerAfterInput {
+  //   margin-right: 10px;
+  //   color: $color-text1-2;
+  //   .line {
+  //     margin-right: 10px;
+  //     vertical-align: middle;
+  //   }
+  // }
+  
+  // .sendCode {
+  //   max-width: 65px;
+  //   margin-right: 10px;
+  // }
+  
+  // .otherLogin {
+  //   color: #666;
+  //   font-size: 14px;
+  // }
+  // .icon {
+  //   margin-left: 10px;
+  // }
+  
+
+  
+  
+  
+}
+

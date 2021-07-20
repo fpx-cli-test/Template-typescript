@@ -1,0 +1,56 @@
+@function px2vw($px) {
+  @return $px * 100vw / 1280;
+}
+
+.Box {
+  padding: px2vw(16);
+  height: 100vh;
+  background-color: #ccc;
+}
+
+.Title {
+  font-size: px2vw(32);
+  padding: px2vw(32);
+  color: #000;
+}
+
+.LeftSection {
+  width: px2vw(458);
+  border-radius: px2vw(8);
+  background-color: #fff;
+}
+
+.RightSection {
+  width: px2vw(774);
+  border-radius: px2vw(8);
+  background-color: #fff;
+}
+
+.Form {
+  padding: px2vw(20) px2vw(32) px2vw(32);
+  border-top: 1px solid rgba(194, 194, 194, 1);
+  border-bottom: 1px solid rgba(194, 194, 194, 1);
+  margin-bottom: px2vw(32);
+  :global(.next-form-item) {
+    margin-bottom: 0;
+  }
+  :global(.next-form-item-label) {
+    font-size: px2vw(24);
+    line-height: px2vw(56);
+  }
+  :global(input) {
+    height: px2vw(60) !important;
+    font-size: px2vw(32) !important;
+  }
+  :global(.next-select) {
+    width: 100% !important;
+    height: px2vw(60);
+    :global(.next-input) {
+      height: 100% !important;
+      :global(.next-select-values) {
+        height: 100% !important;
+        font-size: px2vw(24);
+      }
+    }
+  }
+}

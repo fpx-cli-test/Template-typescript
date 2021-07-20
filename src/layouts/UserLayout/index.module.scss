@@ -1,0 +1,51 @@
+@import '@fpxfd/next/reset.scss';
+@import '~@fpxfd/next/variables.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: url(../../assets/images/login-bgs.jpg) no-repeat center;
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    .header{
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      padding: 0px 125px;
+      .logo{
+        float: left;
+        margin-top: 40px;
+        width: 393px;
+        height: 50px;
+        background: url(../../assets/images/LOGO+Slogan.svg) no-repeat;
+      }
+      .intl{
+        float: right;
+        display: inline-block;
+        margin-top: 57px;
+        font-size: $font-size-body-2;
+        color: $color-white;
+        span{
+          padding: 0 8px;
+        }
+      }
+    }
+    .footer{
+      position: fixed;
+      left: 125px;
+      bottom: 65px;
+      .copyright{
+        color: $color-white;
+        font-size: $font-size-body-1;
+        line-height: 20px;
+        opacity: 0.8;
+      }
+    }
+  }
+  
+}
+

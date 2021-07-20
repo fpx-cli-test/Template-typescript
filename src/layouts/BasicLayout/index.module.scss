@@ -1,0 +1,35 @@
+.Trigger {
+  color: #C3CBD5;
+  width: 20px;
+  height: 18px;
+  font-size: 16px;
+  margin-right: 6px;
+  &::before {
+    font-size: 16px !important;
+  }
+}
+:global {
+  .next-shell-light .next-shell-header {
+    padding-left: 16px;
+  }
+  .next-shell-branding {
+    display: flex;
+    width: 208px;
+    justify-content: space-between;
+  }
+  .next-menu-item .next-menu-item-text .next-icon{
+    color: #878FA6;
+  }
+  .next-nav.next-normal .next-nav-item.next-menu-item.next-child-selected .next-icon{
+    color: #3561cc !important;
+  }
+  .next-nav-item .next-menu-item-text > span{
+    font-weight: 600;
+  }
+  .next-nav.next-normal .next-nav-item.next-menu-item.next-selected{
+    font-weight: 600;
+  }
+  .next-tabs-pure > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab.active{
+    font-weight: 600;
+  }
+}
